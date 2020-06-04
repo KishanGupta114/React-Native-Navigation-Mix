@@ -14,11 +14,18 @@ export class CustomDrawerContent extends Component {
     return (
       <SafeAreaView style={{flex: 1}}>
         <View
-          style={{height: 150, alignItems: 'center', justifyConyent: 'center'}}>
-          <Image
-            source={IMAGE.ICON_PROFILE}
-            style={{height: 90, width: 90, borderRadius: 60, marginTop: 50}}
-          />
+          style={{
+            height: 150,
+            alignItems: 'center',
+            justifyConyent: 'center',
+            backgroundColor: '#5E84CE',
+          }}>
+          <TouchableOpacity>
+            <Image
+              source={IMAGE.ICON_PROFILE}
+              style={{height: 90, width: 90, borderRadius: 60, marginTop: 35}}
+            />
+          </TouchableOpacity>
         </View>
         <ScrollView style={{marginLeft: 10}}>
           <TouchableOpacity
